@@ -1,0 +1,17 @@
+@font-face {
+    font-family: Kueberg;
+    src: url(/fonts/Kuebeg-PersonalUse.otf);
+}
+
+.back-arrow {
+    float: right;
+    margin-top: -60px;
+    margin-right: 5px;
+    height: 45px;
+}
+
+.title {
+    text-align: center;
+    margin-top: -50px;
+    font-family: Kueberg;
+}

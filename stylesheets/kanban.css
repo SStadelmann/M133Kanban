@@ -1,0 +1,153 @@
+@font-face {
+    font-family: Kueberg;
+    src: url(/fonts/Kuebeg-PersonalUse.otf);
+}
+
+.kanban-column {
+    float: left;
+    width: 33.33%;
+    height: 5%;
+    text-align: center;
+}
+
+.kanban-title {
+    height: 60px;
+    background-color: rgb(182, 226, 252);
+    margin: -10px;
+    margin-bottom: 20px;
+}
+
+.title {
+    text-align: center;
+    margin-top: -50px;
+    font-family: Kueberg;
+}
+
+.kanban-column-title {
+    font-family: Kueberg;
+    font-size: 20px;
+}
+
+.kanban-column-images {
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+.back-arrow {
+    float: right;
+    margin-top: -60px;
+    margin-right: 5px;
+    height: 45px;
+}
+
+.kanban-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    min-width: 250px;
+}
+
+.image {
+    width: 20px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: rgb(182, 226, 252);
+}
+
+.copy {
+    margin-top: 5px;
+    margin-left: -75px;
+}
+
+h3 {
+    font-family: fantasy;
+}
+
+.add {
+    margin-top: 10px;
+    vertical-align: middle;
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.877);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.863);
+    /* Black w/ opacity */
+    padding-top: 200px;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: 5px auto;
+    border: 1px solid #ffffff;
+    width: 80%;
+}
+
+.close {
+    position: absolute;
+    right: 40px;
+    top: 200px;
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+input[type=text] {
+    width: 95%;
+    padding: 12px 20px;
+    margin-left: 50px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    margin-top: 20px;
+    margin-left: 50px;
+    padding: 12px 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+label {
+    color: #ffffff;
+    font-family: Kueberg;
+    font-size: 40px;
+    margin-left: 50px;  
+}

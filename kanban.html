@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/javascript/kanban.js"></script>
+    <link href="/stylesheets/kanban.css" rel="stylesheet">
+    <link rel="icon" href="/images/Kanban.png" type="image/x-icon">
+    <title>Kanban</title>
+</head>
+
+<body>
+    <div id="modal" class="modal">
+        <span onclick="document.getElementById('modal').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+
+        <!-- Modal Content -->
+        <div class="container">
+            <label for="title"><b>Enter title of card</b></label>
+            <input type="text" placeholder="title" name="title">
+            <br>
+            <br>
+            <label for="content"><b>Enter content of card</b></label>
+            <input type="text" placeholder="content" name="content">
+            <input type="submit" value="save">
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+        </div>
+    </div>
+    <div>
+
+    </div>
+    <div class="kanban-title">
+        <img src="/images/Kanban.png" height="50px" style="padding: 5px;">
+        <h1 class="title">Kanban</h1>
+        <a href="index.html">
+            <img class="back-arrow" src="/images/left-arrow.svg">
+        </a>
+    </div>
+    <div class="kanban-row">
+        <div class="kanban-column">
+            <img class="kanban-column-images" style="vertical-align: middle;" src="/images/todo.svg">
+            <span class="kanban-column-title">To Do</span>
+        </div>
+        <div class="kanban-column">
+            <img class="kanban-column-images" style="vertical-align: middle;" src="/images/doing.svg">
+            <span class="kanban-column-title">Doing</span>
+        </div>
+        <div class="kanban-column">
+            <img class="kanban-column-images" style="vertical-align: middle;" src="/images/done.svg">
+            <span class="kanban-column-title">Done</span>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="kanban-content">
+        <section id="a1" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+            <div>
+                <a id="add1" onclick="document.getElementById('modal').style.display='block'">
+                    <img class="image add" src="/images/add.svg">
+                </a>
+            </div>
+            <article id="drag4" draggable="true" ondragstart="drag(event)">
+                <a>
+                    <img class="image copy" id="copy" src="/images/copy.svg">
+                </a>
+                <div>
+                    <h3>nibba</h3>
+                </div>
+                <div>
+                    <a id="edit">
+                        <img class="image" src="/images/edit.svg">
+                    </a>
+                    <a id="delete">
+                        <img class="image" src="/images/trash.svg">
+                    </a>
+                    <a id="move">
+                        <img class="image" src="/images/move.svg">
+                    </a>
+                </div>
+            </article>
+        </section>
+        <section id="a1" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+            <a id="add2" onclick="document.getElementById('modal').style.display='block'">
+                <img class="image add" src="/images/add.svg">
+            </a>
+            <article id="drag2" draggable="true" ondragstart="drag(event)">
+                <a>
+                    <img class="image copy" src="/images/copy.svg">
+                </a>
+                <div>
+                    <h3>nibba 4</h3>
+                </div>
+                <div>
+                    <a id="edit">
+                        <img class="image" src="/images/edit.svg">
+                    </a>
+                    <a id="delete">
+                        <img class="image" src="/images/trash.svg">
+                    </a>
+                    <a id="move">
+                        <img class="image" src="/images/move.svg">
+                    </a>
+                </div>
+            </article>
+            <article id="drag1" draggable="true" ondragstart="drag(event)">
+                <a>
+                    <img class="image copy" src="/images/copy.svg">
+                </a>
+                <div>
+                    <h3>nibba 2</h3>
+                </div>
+                <div>
+                    <a id="edit">
+                        <img class="image" src="/images/edit.svg">
+                    </a>
+                    <a id="delete">
+                        <img class="image" src="/images/trash.svg">
+                    </a>
+                    <a id="move">
+                        <img class="image" src="/images/move.svg">
+                    </a>
+                </div>
+            </article>
+        </section>
+        <section id="a1" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+            <div>
+                <a id="add3" onclick="document.getElementById('modal').style.display='block'">
+                    <img class="image add" src="/images/add.svg">
+                </a>
+            </div>
+            <article id="drag3" draggable="true" ondragstart="drag(event)">
+                <a>
+                    <img class="image copy" src="/images/copy.svg">
+                </a>
+                <div>
+                    <h3>nibba 3</h3>
+                </div>
+                <div>
+                    <p>cock n'balls</p>
+                </div>
+                <div>
+                    <a id="edit">
+                        <img class="image" src="/images/edit.svg">
+                    </a>
+                    <a id="delete">
+                        <img class="image" src="/images/trash.svg">
+                    </a>
+                    <a id="move">
+                        <img class="image" src="/images/move.svg">
+                    </a>
+            </article>
+        </section>
+    </div>
+</body>
+
+</html>
