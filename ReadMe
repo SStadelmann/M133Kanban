@@ -7,12 +7,14 @@ Erstellt am: 26.11.2020 um 09:25
 -------------------------------------------------------------------------------------
 
 Gebrauch: 
-    öffnen Sie das index.html file und klicken Sie auf Kanban oder das Kanbanlogo.
-
-    - Die Kanban-Karten können durch die Buttons im unteren-rechten Ecken verschoben werden, aber auch per "drag and drop" verschoben werden.
+    -Starten Sie den Deno Server mit dem Terminal-Command: deno run --allow-net --allow-read /server.js
+    -Geben Sie in ihrem Browser localhost:8000 ein um auf das Kanban zu gelangen.
+    
+    - Die Kanban-Karten können durch die Buttons in der unteren Ecken verschoben werden und auch per "drag and drop" verschoben werden.
     - Zum Hinzufügen einer Kanban-Karte klicken sie auf den "+"-Button.
     - Danach geben Sie einen Text ein, welche Arbeit Sie noch machen möchten.
     - Um den Text erneut zu bearbeiten klicken Sie auf das "bearbeiten"-Symbol.
+    - Um ein Kanban-Karte zu löschen können sie den Papierkorbbutton klicken.
 
-------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
 
