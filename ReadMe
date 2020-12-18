@@ -7,7 +7,7 @@ Erstellt am: 26.11.2020 um 09:25
 -------------------------------------------------------------------------------------
 
 Gebrauch: 
-    -Starten Sie den Deno Server mit dem Terminal-Command: deno run --allow-net --allow-read /server.js
+    -Starten Sie den Deno Server mit dem Terminal-Command: deno run --allow-net --allow-read webserver.js
     -Geben Sie in ihrem Browser localhost:8000 ein um auf das Kanban zu gelangen.
     
     - Die Kanban-Karten können durch die Buttons in der unteren Ecken verschoben werden und auch per "drag and drop" verschoben werden.
